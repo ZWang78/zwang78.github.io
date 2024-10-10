@@ -1,312 +1,284 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta content="DESCRIPTION META TAG" name="description">
+    <meta content="SOCIAL MEDIA TITLE TAG" property="og:title"/>
+    <meta content="SOCIAL MEDIA DESCRIPTION TAG TAG" property="og:description"/>
+    <meta content="URL OF THE WEBSITE" property="og:url"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta content="static/image/your_banner_image.png" property="og:image"/>
+    <meta content="1200" property="og:image:width"/>
+    <meta content="630" property="og:image:height"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="TWITTER BANNER TITLE META TAG" name="twitter:title">
+    <meta content="TWITTER BANNER DESCRIPTION META TAG" name="twitter:description">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta content="static/images/your_twitter_banner_image.png" name="twitter:image">
+    <meta conte nt="summary_large_image" name="twitter:card">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta content="KEYWORDS SHOULD BE PLACED HERE" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+    <title>Xray2MRI</title>
+    <link href="static/images/avocado.png" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link href="static/css/bulma.min.css" rel="stylesheet">
+    <link href="static/css/bulma-carousel.min.css" rel="stylesheet">
+    <link href="static/css/bulma-slider.min.css" rel="stylesheet">
+    <link href="static/css/fontawesome.all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+          rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
 </head>
 <body>
 
 
-  <section class="hero">
+<section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">A Diffusion-based Xray2MRI Model: Generating Pseudo-MRI
+                        Volumes From one Single X-ray</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                    <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhe Wang<sup>1</sup></a>,</span>
+                        <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Rachid Jennane<sup>2</sup></a>,
+                </span>
+                        <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Aladine Chetouani<sup>3</sup></a>,
+                </span>
+                        <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Mohamed Jarraya<sup>1</sup><sup>†</sup></a>
+                </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Department of Radiology, Massachusetts General Hospital, Harvard Medical School, Boston, 02114, USA</span>
+                        <span class="author-block"><sup>2</sup>IDP Institute, UMR CNRS 7013, University of Orleans, Orleans, 45067, France</span>
+                        <span class="author-block"><sup>3</sup>L2TI Laboratory, Sorbonne Paris North University, Paris, 93430, France</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark"
+                     href="https://arxiv.org/abs/2410.06997"
+                     target="_blank">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
                   </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <span>arXiv</span>
+                </a>
+                </span>
+                            <!-- Github link -->
+                            <span class="link-block">
+                    <a class="external-link button is-normal is-rounded is-dark"
+                       href="https://github.com/YOUR REPO HERE"
+                       target="_blank">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+    <div class="container is-max-desktop ">
+        <div class="hero-body ">
+
+            <div style="display: inline-block; text-align: center;">
+                <h3>X-ray</h3>
+                <img height="220" src="static/videos/9015798R.png" width="220">
+            </div>
+            <div style="display: inline-block; text-align: center;">
+                <h3>Real MRI</h3>
+                <img height="220" src="static/videos/output1.gif" width="220">
+            </div>
+            <div style="display: inline-block; text-align: center;">
+                <h3>Generated Pseudo-MRI</h3>
+                <img height="220" src="static/videos/ezgif-4-8a5fd8b493.gif" width="220">
+            </div>
+            <div style="display: inline-block; text-align: center;">
+                <h3>Pseudo-MRI (x2 Interpolation)</h3>
+                <img height="220" src="static/videos/interpolation1.gif" width="220">
+            </div>
+            <!-- Your video here -->
+
+            <img height="220" src="static/videos/9027281R.png" width="220">
+            <img height="220" src="static/videos/output2.gif" width="220">
+            <img height="220" src="static/videos/ezgif-2-4a6252e6f5.gif" width="220">
+            <img height="220" src="static/videos/interpolation2.gif" width="220">
+
+            <h2 class="subtitle" style="font-size:0.9em; ">
+                <sup>*</sup>It is noteworthy that the reconstructed MRI is not intended to serve as a clinical
+                replacement for a
+                real MRI. Still, it marks a pioneering cross-modal attempt to generate corresponding pseudo-MRI volumes
+                from X-rays, for seeking cost-effective medical imaging solutions.
+            </h2>
+        </div>
     </div>
-  </div>
 </section>
 <!-- End teaser video -->
 
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <h2 class="subtitle">
+                The inference process is shown as follows:
+            </h2>
+            <img src="static/videos/giff.gif">
+        </div>
+    </div>
+</section>
+
 <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Knee osteoarthritis (KOA) is a prevalent musculoskeletal disorder, and X-rays are commonly used
+                        for its diagnosis due to their cost-effectiveness. Magnetic Resonance Imaging (MRI), on the
+                        other hand, offers detailed soft tissue visualization and has become a valuable supplementary
+                        diagnostic tool for KOA. Unfortunately, the high cost and limited accessibility of MRI hinder
+                        its widespread use, leaving many patients with KOA reliant solely on X-ray imaging. In this
+                        study, we introduce a novel diffusion-based Xray2MRI model capable of generating pseudo-MRI
+                        volumes from one single X-ray image. In addition to using X-rays as conditional input, our model
+                        integrates target depth, KOA probability distribution, and image intensity distribution modules
+                        to guide the synthesis process, ensuring that the generated corresponding slices accurately
+                        correspond to the anatomical structures. Experimental results demonstrate that by integrating
+                        information from X-rays with additional input data, our proposed approach is capable of
+                        generating pseudo-MRI sequences that approximate real MRI scans. Moreover, by increasing the
+                        inference times, the model achieves effective interpolation, further improving the continuity
+                        and smoothness of the generated MRI sequences, representing one promising initial attempt for
+                        cost-effective medical imaging solutions.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 <!-- End paper abstract -->
 
 
 <!-- Image carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+    <div class="hero-body">
+        <div class="container">
+            <!--            <div class="carousel results-carousel" id="results-carousel">-->
+            <div class="item">
+                <!-- Your image here -->
+                <h2 class="title has-text-centered" style="font-size:1.8em;">Flowchart of our proposed approach</h2>
+                <div style="text-align: center;">
+                    <img alt="MY ALT TEXT" height="900" src="static/images/flowchart3.png" width="900"/>
+                </div>
+            </div>
+<!--            <div class="item">-->
+<!--                &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--                <h2 class="title has-text-centered" style="font-size:1.5em; padding-top:40px;" >Visualization of the generated pseudo-MRI slices using SOTA-->
+<!--                    models</h2>-->
+<!--                <div style="text-align: center;">-->
+<!--                    <img alt="MY ALT TEXT" height="900" src="static/images/111.png" width="900"/>-->
+<!--                </div>-->
+
+<!--            </div>-->
+            <!--            </div>-->
+        </div>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+<!--<section class="hero is-small is-light">-->
+<!--    <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--            <h2 class="title">Poster</h2>-->
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
+<!--            <iframe height="550" src="static/pdfs/sample.pdf" width="100%">-->
+<!--            </iframe>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{wang2024diffusionbasedxray2mrimodelgenerating,
+      title={A Diffusion-based Xray2MRI Model: Generating Pseudo-MRI Volumes From one Single X-ray},
+      author={Zhe Wang and Rachid Jennane and Aladine Chetouani and Mohamed Jarraya},
+      year={2024},
+      eprint={2410.06997},
+      archivePrefix={arXiv},
+      url={https://arxiv.org/abs/2410.06997},
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                        Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                target="_blank">Nerfies</a> project
+                        page.
+                        You are free to borrow the source code of this website, we just ask that you link back to this
+                        page in the footer. <br> This website is licensed under a <a
+                            href="http://creativecommons.org/licenses/by-sa/4.0/"
+                            rel="license"
+                            target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
 
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+<!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
