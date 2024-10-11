@@ -3,26 +3,25 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 $(document).ready(function () {
     // Check for click events on the navbar burger icon
-    $('#loading-screen').show();
+$("body").css("visibility", "hidden");
 
-    // Wait for all page resources to load
-    $(window).on('load', function () {
-        // Hide the loading screen once everything is loaded
-        $('#loading-screen').fadeOut("slow");
-    });
+    // Wait until the page fully loads (including GIFs)
+    window.onload = function() {
+        // Show the content after everything is loaded
+        $("body").css("visibility", "visible");
 
-    var options = {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        loop: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        var options = {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            loop: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        }
+
+        // Initialize all div with carousel class
+        var carousels = bulmaCarousel.attach('.carousel', options);
+
+        bulmaSlider.attach();
     }
-
-    // Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
-
-    bulmaSlider.attach();
-
 })
