@@ -276,17 +276,6 @@
         </div>
     </div>
 </footer>
-
-<script>
-    window.onload = function () {
-        // 找到所有 GIF 文件并重新设置它们的 src
-        document.querySelectorAll('img[src$=".gif"]').forEach(function (img) {
-            let src = img.getAttribute('src');
-            img.setAttribute('src', '');  // 先清除 src
-            img.setAttribute('src', src); // 再重新设置为原始 src，触发重新加载
-        });
-    };
-</script>
 <!-- Statcounter tracking code -->
 
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
