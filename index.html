@@ -18,7 +18,7 @@
     <meta content="TWITTER BANNER DESCRIPTION META TAG" name="twitter:description">
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
     <meta content="static/images/your_twitter_banner_image.png" name="twitter:image">
-    <meta conte nt="summary_large_image" name="twitter:card">
+    <meta conte name="twitter:card" nt="summary_large_image">
     <!-- Keywords for your paper to be indexed by-->
     <meta content="KEYWORDS SHOULD BE PLACED HERE" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -64,7 +64,8 @@
                     <a href="http://aladine-chetouani.com/" target="_blank">Aladine Chetouani<sup>3</sup></a>,
                 </span>
                         <span class="author-block">
-                    <a href="https://www.massgeneral.org/doctors/20888/mohamed-jarraya" target="_blank">Mohamed Jarraya<sup>1</sup><sup>†</sup></a>
+                    <a href="https://www.massgeneral.org/doctors/20888/mohamed-jarraya"
+                       target="_blank">Mohamed Jarraya<sup>1</sup><sup>†</sup></a>
                 </span>
                     </div>
 
@@ -121,17 +122,20 @@
             </div>
             <div style="display: inline-block; text-align: center;">
                 <h3>Generated Pseudo-MRI</h3>
-                <img height="220" src="static/videos/ezgif-4-8a5fd8b493.gif?random=<?php echo rand(0, 999999); ?>" width="220">
+                <img height="220" src="static/videos/ezgif-4-8a5fd8b493.gif?random=<?php echo rand(0, 999999); ?>"
+                     width="220">
             </div>
             <div style="display: inline-block; text-align: center;">
                 <h3>Pseudo-MRI (x2 Interpolation)</h3>
-                <img height="220" src="static/videos/interpolation1.gif?random=<?php echo rand(0, 999999); ?>" width="220">
+                <img height="220" src="static/videos/interpolation1.gif?random=<?php echo rand(0, 999999); ?>"
+                     width="220">
             </div>
             <!-- Your video here -->
 
             <img height="220" src="static/videos/9027281R.png" width="220">
             <img height="220" src="static/videos/output2.gif?random=<?php echo rand(0, 999999); ?>" width="220">
-            <img height="220" src="static/videos/ezgif-2-4a6252e6f5.gif?random=<?php echo rand(0, 999999); ?>" width="220">
+            <img height="220" src="static/videos/ezgif-2-4a6252e6f5.gif?random=<?php echo rand(0, 999999); ?>"
+                 width="220">
             <img height="220" src="static/videos/interpolation2.gif?random=<?php echo rand(0, 999999); ?>" width="220">
 
             <h2 class="subtitle" style="font-size:0.9em; ">
@@ -200,15 +204,15 @@
                     <img alt="MY ALT TEXT" height="902" src="static/images/flowchart3.png" width="902"/>
                 </div>
             </div>
-<!--            <div class="item">-->
-<!--                &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--                <h2 class="title has-text-centered" style="font-size:1.5em; padding-top:40px;" >Visualization of the generated pseudo-MRI slices using SOTA-->
-<!--                    models</h2>-->
-<!--                <div style="text-align: center;">-->
-<!--                    <img alt="MY ALT TEXT" height="900" src="static/images/111.png" width="900"/>-->
-<!--                </div>-->
+            <!--            <div class="item">-->
+            <!--                &lt;!&ndash; Your image here &ndash;&gt;-->
+            <!--                <h2 class="title has-text-centered" style="font-size:1.5em; padding-top:40px;" >Visualization of the generated pseudo-MRI slices using SOTA-->
+            <!--                    models</h2>-->
+            <!--                <div style="text-align: center;">-->
+            <!--                    <img alt="MY ALT TEXT" height="900" src="static/images/111.png" width="900"/>-->
+            <!--                </div>-->
 
-<!--            </div>-->
+            <!--            </div>-->
             <!--            </div>-->
         </div>
     </div>
@@ -273,6 +277,16 @@
     </div>
 </footer>
 
+<script>
+    window.onload = function () {
+        // 找到所有 GIF 文件并重新设置它们的 src
+        document.querySelectorAll('img[src$=".gif"]').forEach(function (img) {
+            let src = img.getAttribute('src');
+            img.setAttribute('src', '');  // 先清除 src
+            img.setAttribute('src', src); // 再重新设置为原始 src，触发重新加载
+        });
+    };
+</script>
 <!-- Statcounter tracking code -->
 
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
